@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter FanApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="oscuro">
+  <header>
+    <h1>Bienvenido al Mundo Mágico</h1>
+  </header>
+
+  <main>
+    <section id="inicio" class="seccion">
+      <h2>Explora el Universo de Harry Potter</h2>
+      <p>Regístrate y descubre personajes mágicos del mundo de Hogwarts.</p>
+    </section>
+
+    <section id="registro" class="seccion">
+      <h2>Registro</h2>
+      <form id="registro-form">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="email" id="email" placeholder="Correo Electrónico" required>
+        <button type="submit">Registrarse</button>
+      </form>
+    </section>
+
+    <section id="personajes" class="seccion oculto">
+      <h2>Personajes</h2>
+      <div id="personajes-lista" class="grid-personajes"></div>
+    </section>
+  </main>
+
+  <footer>
+    <button onclick="mostrarSeccion('inicio')">Inicio</button>
+    <button onclick="mostrarSeccion('registro')">Registro</button>
+    <button onclick="mostrarSeccion('personajes')">Personajes</button>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
